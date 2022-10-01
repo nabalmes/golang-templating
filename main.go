@@ -11,7 +11,6 @@ import (
 func main() {
 	dataHandler()
 	RegisterModels()
-
 	ServerPort()
 
 }
@@ -31,5 +30,6 @@ func RegisterModels() {
 }
 
 func dataHandler() {
-	http.HandleFunc("/index/", uadmin.Handler(views.CerezoHandler))
+	http.HandleFunc("/index/", uadmin.Handler(views.IndexHandler))
+	http.HandleFunc("/", uadmin.Handler(views.SigninHandler))
 }

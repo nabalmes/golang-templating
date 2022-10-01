@@ -1,0 +1,168 @@
+:root {
+  --main-black: rgba(12, 12, 12, 0.89); 
+  --secondary-black: rgba(12, 12, 12, 0.89);
+  --white: rgba(255, 255, 255, 0.836);
+  --secondary-white: rgba(255, 255, 255, 0.61);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("	https://wallpaperaccess.com/full/5749615.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.card-container {
+    padding: 2.5rem 0;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    grid-template-rows: auto auto;
+    grid-row-gap: 2rem;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 500px;
+    width: 356px;
+
+    background-color: rgba(12, 12, 12, 0.459);
+    color: #fff;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    transition: all 500ms ease;
+}
+
+.card:hover{
+    border: 1px solid rgba(235, 228, 228, 0.911);
+    background-color: rgba(12, 12, 12, 0.582);
+    backdrop-filter: blur(10px);
+    transition: all 500ms ease;
+}
+
+/* Signin Css*/
+
+.signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-form {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    padding: 80px 50px 0 50px;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.466);
+    backdrop-filter: blur(3px);
+    color: var(--white);
+
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.login-btn {
+    /* position: absolute;
+    bottom: 0; */
+
+    padding: 20px;
+    width: 100%;
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    width: 100%;
+    background: var(--secondary-white);
+    backdrop-filter: blur(5px);
+    color: black;
+
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.signin-btn:hover {
+    background: var(--white);
+    backdrop-filter: blur(6px);
+
+    transition: all 200ms ease;
+}
+
+.signup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    width: 100%;
+    background: var(--black);
+    backdrop-filter: blur(5px);
+    color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: var(--secondary-black);
+    backdrop-filter: blur(5px););
+
+    transition: all 250ms ease;
+}
+
+
+.username-bar,
+.password-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

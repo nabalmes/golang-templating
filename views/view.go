@@ -7,7 +7,7 @@ import (
 	"github.com/uadmin/uadmin"
 )
 
-func CerezoHandler(w http.ResponseWriter, r *http.Request) {
+func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{}
 
 	Balmes := []models.Balmes{}
