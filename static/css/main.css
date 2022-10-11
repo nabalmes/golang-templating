@@ -37,18 +37,20 @@ section{
 
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 450px);
+    grid-template-columns: repeat(auto-fit, 280px);
     grid-template-rows: auto auto;
     grid-row-gap: 2rem;
     flex-wrap: wrap;
     /* gap: 2rem; */
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
 
 .card{
     height: 500px;
-    width: 356px;
+    width: clamp(256px, 7vw, 356px);
 
     background-color: rgba(12, 12, 12, 0.459);
     color: #fff;
@@ -65,7 +67,7 @@ section{
 }
 
 .card:hover{
-    border: 1px solid rgba(235, 228, 228, 0.911);
+    border: 1px solid rgba(155, 154, 154, 0.603);
     background-color: rgba(12, 12, 12, 0.582);
     backdrop-filter: blur(10px);
     transition: all 500ms ease;
@@ -154,7 +156,7 @@ section{
 
 .signup-btn:hover {
     background: var(--secondary-black);
-    backdrop-filter: blur(5px););
+    backdrop-filter: blur(5px);
 
     transition: all 250ms ease;
 }

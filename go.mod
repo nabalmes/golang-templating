@@ -2,8 +2,6 @@ module github.com/nabalmes/tesst
 
 go 1.19
 
-require github.com/uadmin/uadmin v0.8.7
-
 require (
 	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
@@ -16,6 +14,7 @@ require (
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.3 // indirect
 	github.com/uadmin/rrd v0.0.0-20200219090641-e438da1b7640 // indirect
+	github.com/uadmin/uadmin v0.8.7 // indirect
 	github.com/xuri/efp v0.0.0-20220603152613-6918739fd470 // indirect
 	github.com/xuri/excelize/v2 v2.6.0 // indirect
 	github.com/xuri/nfp v0.0.0-20220409054826-5e722a1d9e22 // indirect
