@@ -32,4 +32,5 @@ func RegisterModels() {
 func dataHandler() {
 	http.HandleFunc("/index/", uadmin.Handler(views.IndexHandler))
 	http.HandleFunc("/", uadmin.Handler(views.SigninHandler))
+	http.HandleFunc("/signup", uadmin.Handler(views.SignupHandler))
 }

@@ -9,7 +9,6 @@ import (
 )
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	data := map[string]interface{}{}
 
 	Balmes := []models.Balmes{}
 	uadmin.All(&Balmes)
